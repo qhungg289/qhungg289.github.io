@@ -7,50 +7,60 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 ---
 
 <Layout title="Dương Quang Hưng">
-	<div class="container max-w-screen-md">
-		<div>
-			<TitleBar title="qhungg289" />
-			<ContentArea>
-				<Promt>cat greeting.md</Promt>
-				<p># Hello, I'm Dương Quang Hưng.</p>
-				<br />
-				<p>
-					I'm a {new Date().getFullYear() - 2000} years old developer living in Vietnam,
-					whose passion was *creating an awesome digital experiences* for your need.
-					I specialize in **Web Development**, but I prefer the Back-end stuffs.
-				</p>
-				<br />
-				<p>
-					-
-					<a
-						class="hover:underline"
-						href="https://github.com/qhungg289"
-						target="_blank">[Github](https://github.com/qhungg289)</a
-					>
-				</p>
-				<p>
-					-
-					<a
-						class="hover:underline"
-						href="https://facebook.com/qhungg289"
-						target="_blank">[Facebook](https://facebook.com/qhungg289)</a
-					>
-				</p>
-				<p>
-					-
-					<a
-						class="hover:underline"
-						href="https://twitter.com/qhungg289"
-						target="_blank">[Twitter](https://twitter.com/qhungg289)</a
-					>
-				</p>
-				<Promt>cd blogPosts</Promt>
-				<Promt dirPath="/blogPosts">ls</Promt>
-				<p>Coming soon... :P</p>
-				<Promt>
-					<BlinkingCursor />
-				</Promt>
-			</ContentArea>
-		</div>
+	<div class="max-w-screen-sm">
+		<TitleBar title="qhungg289" />
+		<ContentArea>
+			<Promt>cat greeting.md</Promt>
+			<p># Hello, I'm Dương Quang Hưng.</p>
+			<br />
+			<p>
+				I'm a {new Date().getFullYear() - 2000} years old developer living in Viet
+				Nam, whose passion was *creating an awesome digital experience* for your
+				need. I specialize in **Web Development**, but I prefer the back-end stuff
+				more.
+			</p>
+			<br />
+			<p>
+				-
+				<a
+					class="hover:underline"
+					href="https://github.com/qhungg289"
+					target="_blank">[Github](https://github.com/qhungg289)</a
+				>
+			</p>
+			<p>
+				-
+				<a
+					class="hover:underline"
+					href="https://facebook.com/qhungg289"
+					target="_blank">[Facebook](https://facebook.com/qhungg289)</a
+				>
+			</p>
+			<p>
+				-
+				<a
+					class="hover:underline"
+					href="https://twitter.com/qhungg289"
+					target="_blank">[Twitter](https://twitter.com/qhungg289)</a
+				>
+			</p>
+			<Promt>cd technologies</Promt>
+			<Promt dirPath="/technologies">ls</Promt>
+			<div class="grid grid-cols-2">
+				<div>
+					<p>JavaScript, TypeScript</p>
+					<p>PHP</p>
+					<p>Go</p>
+				</div>
+				<div>
+					<p>Express</p>
+					<p>React, Vue</p>
+					<p>Laravel</p>
+				</div>
+			</div>
+			<Promt>
+				<BlinkingCursor />
+			</Promt>
+		</ContentArea>
 	</div>
 </Layout>
