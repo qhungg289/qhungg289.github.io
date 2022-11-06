@@ -1,34 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TitleBar from "../components/Window/TitleBar.astro";
+import ContentArea from "../components/Window/ContentArea.astro";
+import Promt from "../components/Terminal/Promt.astro";
+import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 ---
 
 <Layout title="Dương Quang Hưng">
-	<div class="container max-w-prose">
+	<div class="container max-w-screen-md">
 		<div>
-			<div
-				class="bg-zinc-700/30 backdrop-blur-md py-2 px-2 flex gap-2 rounded-t-md"
-			>
-				<div
-					class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
-				>
-				</div>
-				<div
-					class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
-				>
-				</div>
-				<div
-					class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
-				>
-				</div>
-			</div>
-			<div
-				class="bg-zinc-800/30 backdrop-blur-md font-source-code-pro pt-4 pb-10 px-2 rounded-b-md"
-			>
-				<p>
-					<span class="text-teal-300">qhungg289@home</span>:<span
-						class="text-blue-300">~</span
-					>$ cat greeting.md
-				</p>
+			<TitleBar title="qhungg289" />
+			<ContentArea>
+				<Promt>cat greeting.md</Promt>
 				<p># Hello, I'm Dương Quang Hưng.</p>
 				<br />
 				<p>
@@ -61,12 +44,13 @@ import Layout from "../layouts/Layout.astro";
 						target="_blank">[Twitter](https://twitter.com/qhungg289)</a
 					>
 				</p>
-				<p>
-					<span class="text-teal-300">qhungg289@home</span>:<span
-						class="text-blue-300">~</span
-					>$ <span class="w-1 h-1 bg-zinc-100 animate-breath">_</span>
-				</p>
-			</div>
+				<Promt>cd blogPosts</Promt>
+				<Promt dirPath="/blogPosts">ls</Promt>
+				<p>Coming soon... :P</p>
+				<Promt>
+					<BlinkingCursor />
+				</Promt>
+			</ContentArea>
 		</div>
 	</div>
 </Layout>

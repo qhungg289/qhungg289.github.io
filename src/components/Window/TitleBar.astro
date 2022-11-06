@@ -1,0 +1,41 @@
+---
+export interface Props {
+	title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div
+	class="bg-zinc-700/30 backdrop-blur-md py-2 px-2 flex items-center justify-between rounded-t-lg select-none"
+>
+	<div class="flex gap-2">
+		<div
+			class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
+		>
+		</div>
+		<div
+			class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
+		>
+		</div>
+		<div
+			class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
+		>
+		</div>
+	</div>
+	<span class="font-ibm-plex-sans">{title}</span>
+	<div class="flex gap-2 invisible">
+		<div
+			class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
+		>
+		</div>
+		<div
+			class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
+		>
+		</div>
+		<div
+			class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
+		>
+		</div>
+	</div>
+</div>
