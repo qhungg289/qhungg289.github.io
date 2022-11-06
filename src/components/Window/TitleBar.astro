@@ -10,18 +10,19 @@ const { title } = Astro.props;
 	class="bg-zinc-700/50 backdrop-blur-md py-2 px-4 flex items-center justify-between rounded-t-lg select-none"
 >
 	<div class="flex gap-2">
-		<div
+		<button
 			class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
 		>
-		</div>
-		<div
+		</button>
+		<button
 			class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
 		>
-		</div>
-		<div
+		</button>
+		<button
+			x-on:click="isWindowFullscreen = ! isWindowFullscreen"
 			class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
 		>
-		</div>
+		</button>
 	</div>
 	<span class="font-ibm-plex-sans">{title}</span>
 	<div class="flex gap-2 invisible">
