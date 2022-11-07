@@ -8,7 +8,7 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 
 <Layout title="Dương Quang Hưng">
 	<div
-		class="overflow-hidden"
+		class="overflow-hidden shadow-2xl"
 		x-data="{ isWindowFullscreen: false }"
 		x-bind:class="isWindowFullscreen ? 'h-full w-full' : 'h-auto max-w-screen-sm'"
 		x-cloak
@@ -16,15 +16,20 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 		<TitleBar title="qhungg289" />
 		<ContentArea>
 			<Promt>cat greeting.md</Promt>
-			<p># Hello, I'm Dương Quang Hưng.</p>
+			<p class="font-extrabold"># Hello, I'm Dương Quang Hưng.</p>
 			<br />
+			<p class="font-extrabold">## About me</p>
 			<p>
-				I'm a {new Date().getFullYear() - 2000} years old developer living in Viet
-				Nam, whose passion was *creating an awesome digital experience* for your
-				need. I specialize in **Web Development**, but I prefer the back-end stuff
-				more.
+				I'm a young and aspiring developer living in <span class="text-red-300"
+					>Viet Nam</span
+				>, whose passion was <span class="font-bold text-violet-300"
+					>**creating an awesome digital experience**</span
+				> for your need. I specialize in <span class="font-bold text-violet-300"
+					>**Web Development**</span
+				>, but I prefer the back-end stuff more.
 			</p>
 			<br />
+			<p class="font-extrabold">## Contact</p>
 			<p>
 				-
 				<a
@@ -49,28 +54,30 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 					target="_blank">[Twitter](https://twitter.com/qhungg289)</a
 				>
 			</p>
-			<Promt>cd technologies</Promt>
+			<p>
+				-
+				<a
+					class="hover:underline"
+					href="mailto:duongquanghung749@gmail.com"
+					target="_blank">[Email](duongquanghung749@gmail.com)</a
+				>
+			</p>
+			<!-- <Promt>cd technologies</Promt>
 			<Promt dirPath="/technologies">ls</Promt>
 			<div class="grid grid-cols-2">
 				<div>
-					<p>
-						<span class="text-yellow-400">JavaScript</span>, <span
-							class="text-blue-400">TypeScript</span
-						>
-					</p>
+					<p class="text-yellow-400">JavaScript</p>
+					<p class="text-blue-400">TypeScript</p>
 					<p class="text-purple-400">PHP</p>
 					<p class="text-sky-400">Go</p>
 				</div>
 				<div>
+					<p class="text-blue-400">React</p>
+					<p class="text-green-400">Vue</p>
 					<p class="text-zinc-400">Express</p>
-					<p>
-						<span class="text-blue-400">React</span>, <span
-							class="text-green-400">Vue</span
-						>
-					</p>
 					<p class="text-red-400">Laravel</p>
 				</div>
-			</div>
+			</div> -->
 			<Promt>
 				<BlinkingCursor />
 			</Promt>
