@@ -9,7 +9,9 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 <Layout title="Dương Quang Hưng">
 	<div
 		class="overflow-hidden"
+		x-data="{ isWindowFullscreen: false }"
 		x-bind:class="isWindowFullscreen ? 'h-full w-full' : 'h-auto max-w-screen-sm'"
+		x-cloak
 	>
 		<TitleBar title="qhungg289" />
 		<ContentArea>
