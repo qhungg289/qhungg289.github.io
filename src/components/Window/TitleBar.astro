@@ -7,36 +7,36 @@ const { title } = Astro.props;
 ---
 
 <div
-	class="bg-zinc-700/50 backdrop-blur-md py-2 px-4 flex items-center justify-between rounded-t-lg select-none"
+	class="py-2 px-4 flex items-center justify-between rounded-t-xl select-none border-t-4 border-x-4 border-black bg-white"
 	x-on:dblclick="isWindowFullscreen = ! isWindowFullscreen"
 >
 	<div class="flex gap-2">
 		<button
-			class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-red-400 hover:bg-red-500 cursor-pointer transition-colors"
 		>
 		</button>
 		<button
-			class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer transition-colors"
 		>
 		</button>
 		<button
 			x-on:click="isWindowFullscreen = ! isWindowFullscreen"
-			class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-green-400 hover:bg-green-500 cursor-pointer transition-colors"
 		>
 		</button>
 	</div>
-	<span class="font-ibm-plex-sans">{title}</span>
-	<div class="flex gap-2 invisible">
+	<span class="italic font-bold sm:text-lg">{title}</span>
+	<div class="gap-2 hidden sm:flex invisible">
 		<div
-			class="w-4 h-4 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-red-500 hover:bg-red-500 cursor-pointer transition-colors"
 		>
 		</div>
 		<div
-			class="w-4 h-4 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-yellow-500 hover:bg-yellow-500 cursor-pointer transition-colors"
 		>
 		</div>
 		<div
-			class="w-4 h-4 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer transition-colors"
+			class="w-5 h-5 border-2 border-black rounded-full bg-green-500 hover:bg-green-500 cursor-pointer transition-colors"
 		>
 		</div>
 	</div>

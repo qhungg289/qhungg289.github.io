@@ -1,6 +1,10 @@
 ---
 import "../styles/global.css";
 
+import Star from "../images/Star.svg";
+import Polygon from "../images/Polygon.svg";
+import Ellipse from "../images/Ellipse.svg";
+
 export interface Props {
 	title: string;
 }
@@ -29,8 +33,23 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body
-		class="text-zinc-100 selection:bg-teal-300 selection:text-zinc-800 h-screen flex items-center justify-center"
+		class="selection:bg-teal-300 selection:text-zinc-800 h-screen flex items-center justify-center relative"
 	>
+		<img
+			class="absolute top-40 left-12 animate-up-and-down-2"
+			src={Star}
+			alt=""
+		/>
+		<img
+			class="absolute bottom-4 right-36 sm:right-12 animate-up-and-down-1"
+			src={Polygon}
+			alt=""
+		/>
+		<img
+			class="absolute top-4 right-14 sm:right-44 animate-up-and-down-3"
+			src={Ellipse}
+			alt=""
+		/>
 		<slot />
 	</body>
 </html>
