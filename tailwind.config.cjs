@@ -23,7 +23,7 @@ module.exports = {
 				"up-and-down-2": "up-and-down 2.5s ease-in-out infinite",
 				"up-and-down-3": "up-and-down 2.75s ease-in-out infinite",
 			},
-			dropShadow: {
+			boxShadow: {
 				hard: "8px 8px black",
 			},
 		},
