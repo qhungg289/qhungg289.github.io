@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"source-code-pro": ["Source Code Pro", "monospace"],
+				"cascadia-mono": ["Cascadia Mono", "monospace"],
 			},
 			keyframes: {
 				breath: {
