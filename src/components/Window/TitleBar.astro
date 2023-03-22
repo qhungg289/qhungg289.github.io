@@ -7,34 +7,34 @@ const { title } = Astro.props;
 ---
 
 <div
-	class="py-2 px-4 flex items-center justify-between rounded-t-xl select-none border-t-4 border-x-4 border-black bg-white"
+	class="flex select-none items-center justify-between rounded-t-xl border-x-4 border-t-4 border-black bg-white py-2 px-4"
 >
 	<div class="flex gap-2">
 		<button
-			class="w-5 h-5 border-2 border-black rounded-full bg-red-400 hover:bg-red-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-red-400 transition-colors hover:bg-red-500"
 		>
 		</button>
 		<button
-			class="w-5 h-5 border-2 border-black rounded-full bg-yellow-400 hover:bg-yellow-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-yellow-400 transition-colors hover:bg-yellow-500"
 		>
 		</button>
 		<button
-			class="w-5 h-5 border-2 border-black rounded-full bg-green-400 hover:bg-green-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-green-400 transition-colors hover:bg-green-500"
 		>
 		</button>
 	</div>
 	<span class="font-bold">{title}</span>
-	<div class="gap-2 hidden sm:flex invisible">
+	<div class="invisible hidden gap-2 sm:flex">
 		<div
-			class="w-5 h-5 border-2 border-black rounded-full bg-red-500 hover:bg-red-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-red-500 transition-colors hover:bg-red-500"
 		>
 		</div>
 		<div
-			class="w-5 h-5 border-2 border-black rounded-full bg-yellow-500 hover:bg-yellow-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-yellow-500 transition-colors hover:bg-yellow-500"
 		>
 		</div>
 		<div
-			class="w-5 h-5 border-2 border-black rounded-full bg-green-500 hover:bg-green-500 cursor-pointer transition-colors"
+			class="h-5 w-5 cursor-pointer rounded-full border-2 border-black bg-green-500 transition-colors hover:bg-green-500"
 		>
 		</div>
 	</div>
