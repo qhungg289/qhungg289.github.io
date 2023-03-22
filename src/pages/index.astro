@@ -11,6 +11,13 @@ import Star from "../images/Star.svg";
 import Polygon from "../images/Polygon.svg";
 import Polygon2 from "../images/Polygon 2.svg";
 import Ellipse from "../images/Ellipse.svg";
+
+const contactLinks: { link: string; label: string }[] = [
+	{ link: "https://github.com/qhungg289", label: "Github" },
+	{ link: "https://facebook.com/qhungg289", label: "Facebook" },
+	{ link: "https://twitter.com/qhungg289", label: "Twitter" },
+	{ link: "mailto:duongquanghung749@gmail.com", label: "Email" },
+];
 ---
 
 <Layout title="Hung Duong Quang">
@@ -31,10 +38,7 @@ import Ellipse from "../images/Ellipse.svg";
 			</p>
 			<br />
 			<h2 class="font-extrabold">## Contact</h2>
-			<ContactLink link="https://github.com/qhungg289" label="Github" />
-			<ContactLink link="https://facebook.com/qhungg289" label="Facebook" />
-			<ContactLink link="https://twitter.com/qhungg289" label="Twitter" />
-			<ContactLink link="mailto:duongquanghung749@gmail.com" label="Email" />
+			{contactLinks.map((c) => <ContactLink label={c.label} link={c.link} />)}
 			<Promt>
 				<BlinkingCursor />
 			</Promt>
