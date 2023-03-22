@@ -24,6 +24,7 @@ module.exports = {
 			},
 			boxShadow: {
 				hard: "8px 8px black",
+				"hard-hover": "4px 4px black",
 			},
 		},
 		container: {

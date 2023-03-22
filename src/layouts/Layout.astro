@@ -1,11 +1,6 @@
 ---
 import "../styles/global.css";
 
-import Star from "../images/Star.svg";
-import Polygon from "../images/Polygon.svg";
-import Polygon2 from "../images/Polygon 2.svg";
-import Ellipse from "../images/Ellipse.svg";
-
 export interface Props {
 	title: string;
 }
@@ -32,27 +27,6 @@ const { title } = Astro.props;
 	<body
 		class="font-source-code-pro selection:bg-teal-300 selection:text-zinc-800 h-full flex flex-col items-center justify-center relative"
 	>
-		<img
-			class="absolute top-40 left-12 animate-up-and-down-2"
-			src={Star}
-			alt=""
-		/>
-		<img
-			class="absolute bottom-4 right-14 sm:right-36 animate-up-and-down-1"
-			src={Polygon}
-			alt=""
-		/>
-		<img
-			class="absolute top-4 right-14 sm:right-44 animate-up-and-down-3"
-			src={Ellipse}
-			alt=""
-		/>
-
-		<img
-			class="absolute bottom-28 sm:bottom-4 -left-12 sm:left-36 sm:right-44 animate-up-and-down-1"
-			src={Polygon2}
-			alt=""
-		/>
 		<slot />
 	</body>
 </html>

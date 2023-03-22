@@ -4,6 +4,13 @@ import TitleBar from "../components/Window/TitleBar.astro";
 import ContentArea from "../components/Window/ContentArea.astro";
 import Promt from "../components/Terminal/Promt.astro";
 import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
+import Highlight from "../components/Terminal/Highlight.astro";
+import ContactLink from "../components/Terminal/ContactLink.astro";
+
+import Star from "../images/Star.svg";
+import Polygon from "../images/Polygon.svg";
+import Polygon2 from "../images/Polygon 2.svg";
+import Ellipse from "../images/Ellipse.svg";
 ---
 
 <Layout title="Hung Duong Quang">
@@ -15,50 +22,44 @@ import BlinkingCursor from "../components/Terminal/BlinkingCursor.astro";
 			<br />
 			<h2 class="font-extrabold">## About me</h2>
 			<p>
-				I'm a young and aspiring developer living in Viet Nam, whose passion was <span
-					class="font-bold text-violet-500"
-					>**creating an awesome digital experience**</span
-				> for your need. I specialize in <span class="font-bold text-violet-500"
-					>**Web Development**</span
-				>, but I prefer the back-end stuff more.
+				I'm a young and aspiring developer living in Viet Nam, whose passion was <Highlight
+				>
+					**creating an awesome digital experience**
+				</Highlight> for your need. I specialize in
+				<Highlight>**Web Development**</Highlight>, but I prefer the back-end
+				stuff more.
 			</p>
 			<br />
 			<h2 class="font-extrabold">## Contact</h2>
-			<p>
-				-
-				<a
-					class="hover:underline"
-					href="https://github.com/qhungg289"
-					target="_blank">[Github](https://github.com/qhungg289)</a
-				>
-			</p>
-			<p>
-				-
-				<a
-					class="hover:underline"
-					href="https://facebook.com/qhungg289"
-					target="_blank">[Facebook](https://facebook.com/qhungg289)</a
-				>
-			</p>
-			<p>
-				-
-				<a
-					class="hover:underline"
-					href="https://twitter.com/qhungg289"
-					target="_blank">[Twitter](https://twitter.com/qhungg289)</a
-				>
-			</p>
-			<p>
-				-
-				<a
-					class="hover:underline"
-					href="mailto:duongquanghung749@gmail.com"
-					target="_blank">[Email](duongquanghung749@gmail.com)</a
-				>
-			</p>
+			<ContactLink link="https://github.com/qhungg289" label="Github" />
+			<ContactLink link="https://facebook.com/qhungg289" label="Facebook" />
+			<ContactLink link="https://twitter.com/qhungg289" label="Twitter" />
+			<ContactLink link="mailto:duongquanghung749@gmail.com" label="Email" />
 			<Promt>
 				<BlinkingCursor />
 			</Promt>
 		</ContentArea>
 	</div>
+
+	<img
+		class="absolute top-40 left-12 animate-up-and-down-2"
+		src={Star}
+		alt=""
+	/>
+	<img
+		class="absolute bottom-4 right-14 sm:right-36 animate-up-and-down-1"
+		src={Polygon}
+		alt=""
+	/>
+	<img
+		class="absolute top-4 right-14 sm:right-44 animate-up-and-down-3"
+		src={Ellipse}
+		alt=""
+	/>
+
+	<img
+		class="absolute bottom-28 sm:bottom-4 -left-12 sm:left-36 sm:right-44 animate-up-and-down-1"
+		src={Polygon2}
+		alt=""
+	/>
 </Layout>
