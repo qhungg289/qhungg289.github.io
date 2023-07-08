@@ -1,0 +1,29 @@
+---
+import "../styles/app.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title && `${title} - `}Hung Duong Quang</title>
+  </head>
+  <body
+    class="font-ibm-plex-sans relative flex min-h-screen flex-col items-center justify-center gap-8 bg-zinc-950 text-zinc-100"
+  >
+    <div id="bg" class="isolate -z-50 absolute inset-0"></div>
+    <div
+      class="isolate -z-40 absolute inset-0 bg-gradient-to-br from-transparent to-black"
+    >
+    </div>
+    <slot />
+  </body>
+</html>
