@@ -11,23 +11,23 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title && `${title} - `}Hung Duong Quang</title>
   </head>
-  <body
-    class="font-ibm-plex-sans relative bg-zinc-950 text-zinc-100"
-  >
+  <body class="font-ibm-plex-sans relative bg-zinc-950 text-zinc-100">
     <div id="bg" class="isolate -z-50 absolute inset-0"></div>
     <div
       class="isolate -z-40 absolute inset-0 bg-gradient-to-br from-transparent to-black"
     >
     </div>
-    <div class="flex min-h-screen flex-col items-center justify-center gap-8">
+    <div
+      class="flex min-h-screen my-4 flex-col items-center justify-center gap-8"
+    >
       <slot />
     </div>
   </body>
