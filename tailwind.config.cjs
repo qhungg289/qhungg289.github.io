@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "ibm-plex-sans": ["IBM Plex Sans", "sans-serif"],
+        "dancing-script": ["Dancing Script", "cursive"],
       },
     },
   },

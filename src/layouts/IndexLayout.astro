@@ -1,5 +1,6 @@
 ---
 import "../styles/app.css";
+import Background from "../components/Background.astro";
 
 interface Props {
   title?: string;
@@ -20,11 +21,7 @@ const { title } = Astro.props;
     <title>{title && `${title} - `}Hung Duong Quang</title>
   </head>
   <body class="font-ibm-plex-sans relative bg-zinc-950 text-zinc-100">
-    <div id="bg" class="isolate -z-50 absolute inset-0"></div>
-    <div
-      class="isolate -z-40 absolute inset-0 bg-gradient-to-br from-transparent to-black"
-    >
-    </div>
+    <Background />
     <div
       class="flex min-h-screen py-8 flex-col items-center justify-center gap-8"
     >
