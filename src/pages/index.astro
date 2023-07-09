@@ -8,25 +8,29 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
 ---
 
 <IndexLayout>
-  <div class="flex flex-col items-center gap-4">
-    <Avatar />
-    <div class="text-center space-y-2">
-      <p class="text-3xl font-bold">Hung Duong Quang</p>
-      <p class="text-zinc-500">Full-stack web developer</p>
+  <div
+    class="flex min-h-screen py-8 flex-col items-center justify-center gap-8"
+  >
+    <div class="flex flex-col items-center gap-4">
+      <Avatar />
+      <div class="text-center space-y-2">
+        <p class="text-3xl font-bold">Hung Duong Quang</p>
+        <p class="text-zinc-500">Full-stack web developer</p>
+      </div>
     </div>
-  </div>
 
-  <div class="isolate flex w-full max-w-xl flex-col items-center gap-4">
-    <ContactLinkCard href="https://github.com/qhungg289" title="github">
-      <GithubIcon slot="icon" />
-    </ContactLinkCard>
+    <div class="isolate flex w-full max-w-xl flex-col items-center gap-4">
+      <ContactLinkCard href="https://github.com/qhungg289" title="github">
+        <GithubIcon slot="icon" />
+      </ContactLinkCard>
 
-    <ContactLinkCard href="mailto:duongquanghung749@gmail.com" title="email">
-      <EmailIcon slot="icon" />
-    </ContactLinkCard>
+      <ContactLinkCard href="mailto:duongquanghung749@gmail.com" title="email">
+        <EmailIcon slot="icon" />
+      </ContactLinkCard>
 
-    <ContactLinkCard href="https://facebook.com/qhungg289" title="facebook">
-      <FacebookIcon slot="icon" />
-    </ContactLinkCard>
+      <ContactLinkCard href="https://facebook.com/qhungg289" title="facebook">
+        <FacebookIcon slot="icon" />
+      </ContactLinkCard>
+    </div>
   </div>
 </IndexLayout>
