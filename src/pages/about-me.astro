@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import MainContainer from "../layouts/MainContainer.astro";
 import ChatBubble from "../components/ChatBubble.astro";
+import ChatWindow from "../components/ChatWindow.astro";
+import ChatTimestamp from "../components/ChatTimeStamp.astro";
 
 const messages = [
   "Hi 👋, Hung here!",
@@ -13,36 +15,10 @@ const messages = [
 
 <Layout title="About me">
   <MainContainer>
-    <div
-      class="space-y-4 bg-zinc-900/30 backdrop-blur-md shadow border border-zinc-800 w-full p-4 rounded-xl"
-    >
-      <div>
-        <div
-          class="select-none overflow-hidden rounded-full bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80 backdrop-blur-md w-fit p-[1px] mx-auto shadow"
-        >
-          <div
-            class="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-950/80 backdrop-blur-md text-2xl text-zinc-500 font-dancing-script font-bold shadow-inner"
-          >
-            H
-          </div>
-        </div>
-        <p class="text-center text-zinc-500">Hung</p>
-      </div>
-
+    <ChatWindow>
       <ChatBubble isBelongToGuest message="Okay, so who are you?" />
       {messages.map((m) => <ChatBubble message={m} />)}
-      <div class="flex items-center gap-2">
-        <div
-          class="select-none overflow-hidden rounded-full bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80 backdrop-blur-md w-fit p-[1px] shadow"
-        >
-          <div
-            class="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-950/80 backdrop-blur-md text-lg text-zinc-500 font-dancing-script font-bold shadow-inner"
-          >
-            H
-          </div>
-        </div>
-        <p class="text-sm text-zinc-300">5m ago</p>
-      </div>
-    </div>
+      <ChatTimestamp time="5m" />
+    </ChatWindow>
   </MainContainer>
 </Layout>
