@@ -1,5 +1,6 @@
 ---
-import IndexLayout from "../layouts/IndexLayout.astro";
+import Layout from "../layouts/Layout.astro";
+import MainContainer from "../layouts/MainContainer.astro";
 import Avatar from "../components/Avatar.astro";
 import ContactLinkCard from "../components/ContactLinkCard.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
@@ -7,11 +8,9 @@ import EmailIcon from "../components/icons/EmailIcon.astro";
 import FacebookIcon from "../components/icons/FacebookIcon.astro";
 ---
 
-<IndexLayout>
-  <div
-    class="flex min-h-screen py-8 flex-col items-center justify-center gap-8"
-  >
-    <div class="flex flex-col items-center gap-4">
+<Layout>
+  <MainContainer>
+    <div class="space-y-4">
       <Avatar />
       <div class="text-center space-y-2">
         <p class="text-3xl font-bold">Hung Duong Quang</p>
@@ -19,7 +18,7 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
       </div>
     </div>
 
-    <div class="isolate flex w-full max-w-xl flex-col items-center gap-4">
+    <div class="space-y-4">
       <ContactLinkCard href="https://github.com/qhungg289" title="github">
         <GithubIcon slot="icon" />
       </ContactLinkCard>
@@ -32,5 +31,5 @@ import FacebookIcon from "../components/icons/FacebookIcon.astro";
         <FacebookIcon slot="icon" />
       </ContactLinkCard>
     </div>
-  </div>
-</IndexLayout>
+  </MainContainer>
+</Layout>
