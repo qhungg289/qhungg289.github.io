@@ -1,0 +1,18 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+
+const active = Astro.url.pathname === href;
+---
+
+<a
+  class={`rounded-full py-2 px-6 transition-colors ${
+    active ? "text-zinc-200" : "text-zinc-600 hover:text-zinc-400"
+  }`}
+  href={href}
+>
+  <slot />
+</a>

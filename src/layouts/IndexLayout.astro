@@ -1,6 +1,7 @@
 ---
 import "../styles/app.css";
 import Background from "../components/Background.astro";
+import NavBar from "../components/NavBar.astro";
 
 interface Props {
   title?: string;
@@ -22,10 +23,9 @@ const { title } = Astro.props;
   </head>
   <body class="font-ibm-plex-sans relative bg-zinc-950 text-zinc-100">
     <Background />
-    <div
-      class="flex min-h-screen py-8 flex-col items-center justify-center gap-8"
-    >
-      <slot />
-    </div>
+
+    <NavBar />
+
+    <slot />
   </body>
 </html>
