@@ -8,6 +8,10 @@ module.exports = {
         "dancing-script": ["Dancing Script", "cursive"],
       },
     },
+    container: {
+      center: true,
+      padding: "1rem",
+    },
   },
   plugins: [],
 };
