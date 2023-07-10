@@ -8,12 +8,12 @@ const { isBelongToGuest, message } = Astro.props;
 ---
 
 <div
-  class={`group block w-fit max-w-[25ch] overflow-hidden rounded-xl bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80 backdrop-blur-md p-[1px] shadow ${
+  class={`group block w-fit max-w-[25ch] overflow-hidden rounded-xl bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80   p-[1px] shadow ${
     isBelongToGuest && "ml-auto mr-0"
   }`}
 >
   <div
-    class="h-full w-full rounded-xl bg-zinc-950/80 backdrop-blur-md px-4 py-2 text-zinc-300 shadow-inner transition-colors hover:bg-zinc-900/80"
+    class="h-full w-full rounded-xl bg-zinc-950/80 px-4 py-2 text-zinc-300 shadow-inner transition-colors hover:bg-zinc-900/80"
   >
     {message}
   </div>

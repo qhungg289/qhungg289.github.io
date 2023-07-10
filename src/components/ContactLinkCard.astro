@@ -9,10 +9,10 @@ const { href, title } = Astro.props;
 
 <a
   href={href}
-  class="group block w-full overflow-hidden rounded-full bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80 backdrop-blur-md p-[1px] shadow"
+  class="group block w-full overflow-hidden rounded-full bg-gradient-to-br from-zinc-400/80 via-zinc-900/80 to-zinc-900/80 p-[1px] shadow"
 >
   <div
-    class="h-full w-full rounded-full bg-zinc-950/80 backdrop-blur-md p-4 text-zinc-300 shadow-inner transition-colors hover:bg-zinc-900/80"
+    class="h-full w-full rounded-full bg-zinc-950/80 p-4 text-zinc-300 shadow-inner transition-colors hover:bg-zinc-900/80"
   >
     <div class="relative w-full">
       <slot name="icon" />
