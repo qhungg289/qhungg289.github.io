@@ -1,6 +1,6 @@
 ---
 interface Props {
-  href: string;
+	href: string;
 }
 
 const { href } = Astro.props;
@@ -9,24 +9,24 @@ let isActive = false;
 const pathname = Astro.url.pathname;
 
 if (href == "/" && pathname == "/") {
-  isActive = true;
+	isActive = true;
 } else if (href != "/" && pathname.startsWith(href)) {
-  isActive = true;
+	isActive = true;
 }
 ---
 
 <div class="relative flex flex-col items-center">
-  <a
-    class={`block rounded-full py-2 px-2 sm:px-6 transition-colors font-medium ${
-      isActive ? "text-zinc-200" : "text-zinc-600 hover:text-zinc-400"
-    }`}
-    href={href}
-  >
-    <slot />
-  </a>
-  {
-    isActive && (
-      <div class="w-4 h-4 rounded-full absolute -bottom-2 bg-white blur-md" />
-    )
-  }
+	<a
+		class={`block rounded-full py-2 px-2 sm:px-6 transition-colors font-medium ${
+			isActive ? "text-zinc-200" : "text-zinc-600 hover:text-zinc-400"
+		}`}
+		href={href}
+	>
+		<slot />
+	</a>
+	{
+		isActive && (
+			<div class="w-4 h-4 rounded-full absolute -bottom-2 bg-white blur-md" />
+		)
+	}
 </div>
