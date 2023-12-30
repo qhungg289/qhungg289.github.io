@@ -6,13 +6,13 @@ import { Image } from "astro:assets";
 
 <Layout>
 	<div
-		class="flex flex-col-reverse md:flex-row gap-4 md:items-center justify-between text-gray-500"
+		class="flex flex-col-reverse md:flex-row gap-4 md:items-center justify-between text-gray-500 grow"
 	>
 		<div class="space-y-3">
 			<h1 class="font-inter text-black font-extrabold text-4xl">
 				Dương Quang Hưng
 			</h1>
-			<p>
+			<p class="max-w-[50ch]">
 				Full Stack Developer focused on building products with extra
 				attention to details
 				<span class="flex items-center gap-1 text-sm mt-1">
@@ -94,7 +94,7 @@ import { Image } from "astro:assets";
 		<Image
 			src={avatar}
 			alt="avatar"
-			width={130}
+			width={150}
 			class="rounded-md shadow-xl"
 		/>
 	</div>
