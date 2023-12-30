@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        "ibm-plex-sans": ["IBM Plex Sans", "sans-serif"],
-        "dancing-script": ["Dancing Script", "cursive"],
-      },
-    },
-    container: {
-      center: true,
-      padding: "1rem",
-    },
-  },
-  plugins: [],
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+	theme: {
+		extend: {
+			fontFamily: {
+				"jetbrains-mono": ["JetBrains Mono Variable", "monospace"],
+				inter: ["Inter Variable", "sans-serif"],
+			},
+		},
+		container: {
+			center: true,
+			padding: "1rem",
+		},
+	},
+	plugins: [],
 };
