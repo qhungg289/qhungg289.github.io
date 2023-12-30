@@ -1,43 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MainContainer from "../layouts/MainContainer.astro";
-import Avatar from "../components/Avatar.astro";
-import ContactLinkCard from "../components/ContactLinkCard.astro";
-import GithubIcon from "../components/icons/GithubIcon.astro";
-import EmailIcon from "../components/icons/EmailIcon.astro";
-import TwitterIcon from "../components/icons/TwitterIcon.astro";
 ---
 
 <Layout>
-	<MainContainer>
-		<div class="space-y-4">
-			<Avatar />
-			<div class="text-center space-y-2">
-				<p class="text-4xl font-bold font-dancing-script">
-					Hung Duong Quang
-				</p>
-				<p class="text-zinc-500">Full-stack web developer</p>
-			</div>
-		</div>
-
-		<div class="space-y-4">
-			<ContactLinkCard href="https://github.com/qhungg289" title="github">
-				<GithubIcon slot="icon" />
-			</ContactLinkCard>
-
-			<ContactLinkCard
-				href="mailto:duongquanghung749@gmail.com"
-				title="email"
-			>
-				<EmailIcon slot="icon" />
-			</ContactLinkCard>
-
-			<ContactLinkCard
-				href="https://twitter.com/qhungg289"
-				title="twitter"
-			>
-				<TwitterIcon slot="icon" />
-			</ContactLinkCard>
-		</div>
-	</MainContainer>
+	<h1>Index</h1>
 </Layout>
