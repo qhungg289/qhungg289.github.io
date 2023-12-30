@@ -9,7 +9,9 @@ import { Image } from "astro:assets";
 		class="flex flex-col-reverse md:flex-row gap-4 md:items-center justify-between text-gray-500 grow"
 	>
 		<div class="space-y-3">
-			<h1 class="font-inter text-black font-extrabold text-4xl">
+			<h1
+				class="font-inter text-white w-fit px-2 italic bg-black font-extrabold text-4xl"
+			>
 				Dương Quang Hưng
 			</h1>
 			<p class="max-w-[50ch]">
@@ -36,7 +38,7 @@ import { Image } from "astro:assets";
 			<div class="flex items-center gap-1">
 				<a
 					href="mailto:duongquanghung749@gmail.com"
-					class="p-1 rounded-md border-2 border-gray-200 hover:border-gray-300"
+					class="p-1 border-2 border-gray-200 hover:border-gray-300"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-7 h-7"
@@ -50,7 +52,7 @@ import { Image } from "astro:assets";
 				</a>
 				<a
 					href="https://github.com/qhungg289"
-					class="p-1 rounded-md border-2 border-gray-200 hover:border-gray-300"
+					class="p-1 border-2 border-gray-200 hover:border-gray-300"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-7 h-7"
@@ -64,7 +66,7 @@ import { Image } from "astro:assets";
 				>
 				<a
 					href="https://twitter.com/qhungg289"
-					class="p-1 rounded-md border-2 border-gray-200 hover:border-gray-300"
+					class="p-1 border-2 border-gray-200 hover:border-gray-300"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-7 h-7"
@@ -77,7 +79,7 @@ import { Image } from "astro:assets";
 				>
 				<a
 					href="https://facebook.com/qhungg289"
-					class="p-1 rounded-md border-2 border-gray-200 hover:border-gray-300"
+					class="p-1 border-2 border-gray-200 hover:border-gray-300"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-7 h-7"
@@ -91,11 +93,6 @@ import { Image } from "astro:assets";
 				>
 			</div>
 		</div>
-		<Image
-			src={avatar}
-			alt="avatar"
-			width={150}
-			class="rounded-md shadow-xl"
-		/>
+		<Image src={avatar} alt="avatar" width={150} class="shadow-xl" />
 	</div>
 </Layout>
