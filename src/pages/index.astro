@@ -91,6 +91,27 @@ import { Image } from "astro:assets";
 				>
 			</div>
 		</div>
-		<Image src={avatar} alt="avatar" width={150} class="rounded-xl" />
+		<Image
+			src={avatar}
+			alt="avatar"
+			width={150}
+			id="avatar"
+			class="rounded-xl"
+		/>
 	</div>
 </Layout>
+
+<script>
+	import { animate, spring } from "motion";
+
+	animate(
+		"#avatar",
+		{
+			transform: ["translateX(500px)", "translateX(0)"],
+			opacity: [0, 1],
+		},
+		{
+			easing: spring(),
+		}
+	);
+</script>
