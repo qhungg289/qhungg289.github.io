@@ -1,7 +1,5 @@
 ---
 import "../styles/app.css";
-import "@fontsource-variable/jetbrains-mono";
-import "@fontsource-variable/inter";
 
 interface Props {
 	title?: string;
@@ -17,9 +15,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title && `${title} - `}Dương Quang Hưng</title>
 	</head>
-	<body
-		class="font-jetbrains-mono selection:bg-black selection:text-white overflow-hidden"
-	>
+	<body class="selection:bg-black selection:text-white overflow-hidden">
 		<main
 			class="max-w-[85ch] container min-h-screen flex items-center justify-center"
 		>
