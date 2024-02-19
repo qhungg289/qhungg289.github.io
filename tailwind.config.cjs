@@ -4,8 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				"jetbrains-mono": ["JetBrains Mono Variable", "monospace"],
-				inter: ["Inter Variable", "sans-serif"],
+				"jetbrains-mono": ["JetBrains Mono", "monospace"],
+				inter: ["Inter", "sans-serif"],
 			},
 		},
 		container: {
